@@ -50,7 +50,7 @@ def passwordEncrypt(text: str, key: str):
 
 
 class DailyCP:
-    def __init__(self, schoolName="合肥工业大学"):
+    def __init__(self, schoolName="华东政法大学"):
         self.key = "ST83=@XV"  # dynamic when app update
         self.session = requests.session()
         self.host = ""
@@ -328,33 +328,33 @@ if __name__ == "__main__":
     #     exit()
     # app.autoComplete(sys.argv[4], sys.argv[5])
 
-    # app = DailyCP("合肥工业大学")
+    # app = DailyCP("华东政法大学")
     # if not app.login("856", "shiwo33"):
     #     exit()
-    # app.autoComplete("中国安徽省合肥市蜀山区丹霞路", "./formdb")
+    # app.autoComplete("中国上海市松江区敏德路", "./formdb")
 
-    # app = DailyCP("合肥工业大学")
+    # app = DailyCP("华东政法大学")
     # if not app.login("943", "146911."):
     #     exit()
-    # app.autoComplete("中国安徽省合肥市蜀山区丹霞路", "./formdb")
+    # app.autoComplete("中国上海市松江区敏德路", "./formdb")
 
-    # app = DailyCP("合肥工业大学")
+    # app = DailyCP("华东政法大学")
     # if not app.login("823", "861323myqq"):
     #     exit()
-    # app.autoComplete("中国安徽省合肥市蜀山区丹霞路", "./formdb")
+    # app.autoComplete("中国上海市松江区敏德路", "./formdb")
 
 
     i=1
     while i < len(sys.argv) :
         print(sys.argv[i])
         # print(sys.argv[i+1])
-        app = DailyCP("合肥工业大学")
+        app = DailyCP("华东政法大学")
         if not app.login(sys.argv[i], sys.argv[i+1]):
             print("登陆失败")
             exit()
         else:
             print("登陆成功")
-        app.autoComplete("中国安徽省合肥市蜀山区丹霞路", "./formdb")
+        app.autoComplete("中国上海市松江区敏德路", "./formdb")
         i+=2
 
 # Author:HuangXu,FengXinYang,ZhouYuYang.
